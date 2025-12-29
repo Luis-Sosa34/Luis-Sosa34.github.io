@@ -15,42 +15,58 @@
 <body>
     <header class="cabecera" id="cabecera">
         <nav class="navegacion contenedor">
+
             <a href="#" class="navegacion__logo">Luis Matias Sosa</a>
 
+            <!-- Checkbox oculto -->
             <input type="checkbox" id="alternar-nav" class="navegacion__alternar-input">
 
+            <!-- Botón hamburguesa -->
             <label for="alternar-nav" class="navegacion__alternar-etiqueta">
                 <i class="uil uil-apps navegacion__icono"></i>
             </label>
 
+            <!-- Menú -->
             <div class="navegacion__menu" id="menu-nav">
+
+                <!-- BOTÓN VOLVER / CERRAR -->
+                <label for="alternar-nav" class="navegacion__volver">
+                    <i class="uil uil-arrow-left"></i> Volver
+                </label>
+
                 <ul class="navegacion__lista cuadrilla">
                     <li class="navegacion__item">
-                        <a href="#inicio" class="navegacion__enlace">
+                        <a href="#inicio" class="navegacion__enlace"
+                            onclick="document.getElementById('alternar-nav').checked=false">
                             <i class="uil uil-estate navegacion__icono"></i> Inicio
                         </a>
                     </li>
                     <li class="navegacion__item">
-                        <a href="#acerca" class="navegacion__enlace">
+                        <a href="#acerca" class="navegacion__enlace"
+                            onclick="document.getElementById('alternar-nav').checked=false">
                             <i class="uil uil-user navegacion__icono"></i> Perfil & Experiencia
                         </a>
                     </li>
                     <li class="navegacion__item">
-                        <a href="#contacto" class="navegacion__enlace">
-                            <i class="uil uil-message navegacion__icono"></i> Certificaciones
+                        <a href="#certificaciones" class="navegacion__enlace"
+                            onclick="document.getElementById('alternar-nav').checked=false">
+                            <i class="uil uil-award navegacion__icono"></i> Certificaciones
                         </a>
                     </li>
                     <li class="navegacion__item">
-                        <a href="#habilidades" class="navegacion__enlace">
+                        <a href="#habilidades" class="navegacion__enlace"
+                            onclick="document.getElementById('alternar-nav').checked=false">
                             <i class="uil uil-file-alt navegacion__icono"></i> Habilidades
                         </a>
                     </li>
                     <li class="navegacion__item">
-                        <a href="#contacto" class="navegacion__enlace">
+                        <a href="#contacto" class="navegacion__enlace"
+                            onclick="document.getElementById('alternar-nav').checked=false">
                             <i class="uil uil-message navegacion__icono"></i> Contacto
                         </a>
                     </li>
                 </ul>
+
             </div>
         </nav>
     </header>
@@ -171,5 +187,6 @@
     </footer>
 
 </body>
+
 
 </html>

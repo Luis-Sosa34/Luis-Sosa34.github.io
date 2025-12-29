@@ -327,3 +327,31 @@ p { color: var(--color-secundario); line-height: 1.6; }
     }
 }
 
+.navegacion__volver{
+    display: none;
+    color: var(--color-texto-claro);
+    font-weight: var(--font-medium);
+    font-size: 1rem;
+    padding: 0.75rem 0;
+    cursor: pointer;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+#alternar-nav:checked ~ .navegacion__alternar-etiqueta ~ .navegacion__menu .navegacion__volver{
+    display: inline-flex;
+}
+
+#alternar-nav:checked ~ .navegacion__alternar-etiqueta ~ .navegacion__menu .navegacion__lista{
+    margin-top: 1rem;
+}
+
+#alternar-nav:checked ~ .navegacion__alternar-etiqueta{
+    visibility: hidden;
+}
+
+@media screen and (min-width: 768px){
+    .navegacion__volver{
+        display: none !important;
+    }
+}

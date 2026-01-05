@@ -355,3 +355,26 @@ p { color: var(--color-secundario); line-height: 1.6; }
         display: none !important;
     }
 }
+
+.certificaciones__contenedor{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.certificacion__item{
+  background-color: var(--first-color);
+  color: white;
+  padding: 1rem 1.5rem;
+  border-radius: 0.75rem;
+  text-align: center;
+  font-weight: 500;
+  transition: 0.3s;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+}
+
+.certificacion__item:hover{
+  background-color: var(--first-color-alt);
+  transform: translateY(-3px);
+}

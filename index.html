@@ -1,204 +1,339 @@
 <!DOCTYPE html>
-
 <html lang="es">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portafolio | Luis Matias Sosa</title>
-
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="estilo.css">
-
 </head>
-
 <body>
+
     <header class="cabecera" id="cabecera">
         <nav class="navegacion contenedor">
-
-            <a href="#" class="navegacion__logo">Luis Matias Sosa</a>
-
-            <!-- Checkbox oculto -->
+            <a href="#" class="navegacion__logo">Luis M. Sosa</a>
             <input type="checkbox" id="alternar-nav" class="navegacion__alternar-input">
-
-            <!-- Botón hamburguesa -->
             <label for="alternar-nav" class="navegacion__alternar-etiqueta">
                 <i class="uil uil-apps navegacion__icono"></i>
             </label>
-
-            <!-- Menú -->
-            <div class="navegacion__menu" id="menu-nav">
-
-                <!-- BOTÓN VOLVER / CERRAR -->
+            <div class="navegacion__menu">
                 <label for="alternar-nav" class="navegacion__volver">
                     <i class="uil uil-arrow-left"></i> Volver
                 </label>
-
                 <ul class="navegacion__lista cuadrilla">
-                    <li class="navegacion__item">
-                        <a href="#inicio" class="navegacion__enlace"
-                            onclick="document.getElementById('alternar-nav').checked=false">
-                            <i class="uil uil-estate navegacion__icono"></i> Inicio
-                        </a>
-                    </li>
-                    <li class="navegacion__item">
-                        <a href="#acerca" class="navegacion__enlace"
-                            onclick="document.getElementById('alternar-nav').checked=false">
-                            <i class="uil uil-user navegacion__icono"></i> Perfil & Experiencia
-                        </a>
-                    </li>
-                    <li class="navegacion__item">
-                        <a href="#certificaciones" class="navegacion__enlace"
-                            onclick="document.getElementById('alternar-nav').checked=false">
-                            <i class="uil uil-award navegacion__icono"></i> Certificaciones
-                        </a>
-                    </li>
-                    <li class="navegacion__item">
-                        <a href="#habilidades" class="navegacion__enlace"
-                            onclick="document.getElementById('alternar-nav').checked=false">
-                            <i class="uil uil-file-alt navegacion__icono"></i> Habilidades
-                        </a>
-                    </li>
-                    <li class="navegacion__item">
-                        <a href="#contacto" class="navegacion__enlace"
-                            onclick="document.getElementById('alternar-nav').checked=false">
-                            <i class="uil uil-message navegacion__icono"></i> Contacto
-                        </a>
-                    </li>
+                    <li><a href="#inicio"          class="navegacion__enlace" onclick="document.getElementById('alternar-nav').checked=false"><i class="uil uil-estate navegacion__icono"></i> Inicio</a></li>
+                    <li><a href="#acerca"           class="navegacion__enlace" onclick="document.getElementById('alternar-nav').checked=false"><i class="uil uil-user navegacion__icono"></i> Perfil</a></li>
+                    <li><a href="#proyectos"        class="navegacion__enlace" onclick="document.getElementById('alternar-nav').checked=false"><i class="uil uil-folder navegacion__icono"></i> Proyectos</a></li>
+                    <li><a href="#certificaciones"  class="navegacion__enlace" onclick="document.getElementById('alternar-nav').checked=false"><i class="uil uil-award navegacion__icono"></i> Certs</a></li>
+                    <li><a href="#habilidades"      class="navegacion__enlace" onclick="document.getElementById('alternar-nav').checked=false"><i class="uil uil-file-alt navegacion__icono"></i> Skills</a></li>
+                    <li><a href="#contacto"         class="navegacion__enlace" onclick="document.getElementById('alternar-nav').checked=false"><i class="uil uil-message navegacion__icono"></i> Contacto</a></li>
                 </ul>
-
             </div>
         </nav>
     </header>
+
     <main class="principal">
 
-
-
-        <section class="inicio seccion contenedor" id="inicio">
-            <img src="IMAGEN/image.png" alt="Foto de perfil de Luis Matias Sosa" class="inicio__foto">
-            <h2 class="seccion__titulo">Luis Matias Sosa </h2>
-            <p>Estudiante Universitario | Enfocado en Ingeniería en Informática.</p>
-            <p><i class="uil uil-phone-volume"></i> +595 971 877008 | <i class="uil uil-envelope"></i>
-                luissisa43@gmail.com </p>
+        <section class="inicio" id="inicio">
+            <div class="inicio__fondo"></div>
+            <div class="contenedor inicio__contenido">
+                <div class="inicio__foto-wrapper">
+                    <img src="IMAGEN/image.png" alt="Foto de perfil de Luis Matias Sosa" class="inicio__foto">
+                    <div class="inicio__foto-ring"></div>
+                </div>
+                <div class="inicio__texto">
+                    <span class="inicio__saludo">Hola, soy</span>
+                    <h1 class="inicio__nombre">Luis Matias Sosa</h1>
+                    <p class="inicio__rol">Estudiante de Ingeniería en Informática</p>
+                    <p class="inicio__descripcion">Estudiante de Ingeniería en Informática con perfil analítico, organizado y proactivo, con experiencia en administración, manejo de sistemas y apoyo operativo. Interesado en el desarrollo web y en la creación de soluciones tecnológicas que mejoren procesos y aporten valor a las organizaciones.</p>
+                    <div class="inicio__links">
+                        <a href="https://github.com/Luis-Sosa34" target="_blank" class="inicio__social"><i class="uil uil-github"></i> GitHub</a>
+                        <a href="https://finanzas360.onrender.com/" target="_blank" class="inicio__social"><i class="uil uil-globe"></i> Finanzas360</a>
+                    </div>
+                    <div class="inicio__contacto-rapido">
+                        <a href="tel:+595971877008"       class="inicio__dato"><i class="uil uil-phone-volume"></i> +595 971 877008</a>
+                        <a href="mailto:luissisa43@gmail.com" class="inicio__dato"><i class="uil uil-envelope"></i> luissisa43@gmail.com</a>
+                    </div>
+                    <a href="#proyectos" class="boton">Ver mis proyectos <i class="uil uil-arrow-right"></i></a>
+                </div>
+            </div>
+            <div class="inicio__scroll">
+                <a href="#acerca"><i class="uil uil-mouse-alt"></i><span>Scroll</span></a>
+            </div>
         </section>
 
-
-
         <section class="acerca seccion contenedor" id="acerca">
-            <h2 class="seccion__titulo">Perfil & Experiencia</h2>
+            <h2 class="seccion__titulo">Perfil &amp; Experiencia</h2>
+            <div class="seccion__linea"></div>
 
-            <h3 class="seccion__subtitulo">Perfil Profesional</h3>
-            <p>Joven estudiante comprometido y proactivo, con experiencia en áreas de administración,
-                recursos humanos y trabajo comunitario. Mi enfoque se centra en aportar soluciones
-                efectivas y colaborar en equipo para alcanzar objetivos propuestos. Busco
-                constantemente oportunidades para aprender y crecer profesionalmente, aportando entusiasmo y dedicación
-                a todas mis actividades.</p>
+            <div class="perfil__card">
+                <div class="perfil__icono-wrap"><i class="uil uil-user-circle"></i></div>
+                <div>
+                    <h3 class="seccion__subtitulo" style="margin-top:0">Perfil Profesional</h3>
+                    <div class="perfil__datos">
+                        <span><i class="uil uil-calendar-alt"></i> 24 de junio de 2004</span>
+                        <span><i class="uil uil-map-marker"></i> Paraguayo/a</span>
+                    </div>
+                    <p>Estudiante de Ingeniería en Informática con perfil analítico, organizado y proactivo, con experiencia en administración, manejo de sistemas y apoyo operativo. Interesado en el desarrollo web y en la creación de soluciones tecnológicas que mejoren procesos y aporten valor a las organizaciones.</p>
+                </div>
+            </div>
 
-            <h3 class="seccion__subtitulo">Experiencia</h3>
+            <h3 class="seccion__subtitulo">Experiencia Laboral</h3>
             <div class="experiencia__contenedor cuadrilla">
-                <div class="experiencia__data">
-                    <h4>Asistente de Gerencia</h4>
-                    <span>Intech S.R.L (2024-2025)</span>
+                <div class="experiencia__data animate-on-scroll">
+                    <div class="experiencia__header">
+                        <span class="experiencia__icono"><i class="uil uil-briefcase-alt"></i></span>
+                        <div>
+                            <h4>Asistente de Gerencia</h4>
+                            <span class="experiencia__empresa">Intech S.R.L</span>
+                            <span class="experiencia__periodo"><i class="uil uil-calendar-alt"></i> 2024 – Actualidad</span>
+                        </div>
+                    </div>
                     <ul>
-                        <li>Apoyé a la gerencia en el control de obras y presupuestos</li>
-                        <li>Fui responsable de conciliaciones bancarias y control de combustibles.
-                        </li>
+                        <li>Control de obras y presupuestos</li>
+                        <li>Conciliaciones bancarias y control de combustibles</li>
                     </ul>
                 </div>
-                <div class="experiencia__data">
-                    <h4>Asistente de Recursos Humanos</h4>
-                    <span>Grupo cmp (2023-2024)</span>
+                <div class="experiencia__data animate-on-scroll">
+                    <div class="experiencia__header">
+                        <span class="experiencia__icono"><i class="uil uil-users-alt"></i></span>
+                        <div>
+                            <h4>Asistente de RRHH</h4>
+                            <span class="experiencia__empresa">Grupo CMP</span>
+                            <span class="experiencia__periodo"><i class="uil uil-calendar-alt"></i> 2023 – 2024</span>
+                        </div>
+                    </div>
                     <ul>
-                        <li>Gestioné la plataforma informática para el departamento de talento humano.</li>
-                        <li>Me encargué del archivo de legajos y asientos contables.</li>
+                        <li>Gestión de plataforma de talento humano</li>
+                        <li>Archivo de legajos y asientos contables</li>
                     </ul>
                 </div>
-                <div class="experiencia__data">
-                    <h4>Profesor Particular</h4>
-                    <span>(Física y Matemáticas)</span>
+                <div class="experiencia__data animate-on-scroll">
+                    <div class="experiencia__header">
+                        <span class="experiencia__icono"><i class="uil uil-graduation-cap"></i></span>
+                        <div>
+                            <h4>Profesor Particular</h4>
+                            <span class="experiencia__empresa">Física y Matemáticas</span>
+                            <span class="experiencia__periodo"><i class="uil uil-calendar-alt"></i> Independiente</span>
+                        </div>
+                    </div>
                     <ul>
-                        <li>Impartí clases particulares, desarrollando habilidades de comunicación y
-                            paciencia.</li>
+                        <li>Clases particulares, desarrollando comunicación y paciencia</li>
                     </ul>
                 </div>
             </div>
 
             <h3 class="seccion__subtitulo">Educación</h3>
-            <ul class="educacion__lista">
-                <li><strong>FACULTAD POLITECNICA:</strong> Estudiante de Ingeniería en Informática.</li>
-                <li><strong>COLEGIO CAMPOALTO:</strong> Bachiller científico, 2017-2022.</li>
-                <li><strong>SCUOLA ITALIANA DANTE ALIGHIERI:</strong> Educacion Primaria, 2009-2016.</li>
-            </ul>
+            <div class="educacion__contenedor">
+                <div class="educacion__item animate-on-scroll">
+                    <span class="educacion__icono"><i class="uil uil-university"></i></span>
+                    <div><strong>Facultad Politécnica — UNA</strong><p>Ingeniería en Informática · En curso</p></div>
+                </div>
+                <div class="educacion__item animate-on-scroll">
+                    <span class="educacion__icono"><i class="uil uil-book-open"></i></span>
+                    <div><strong>Colegio Campoalto</strong><p>Bachiller Científico · 2017 – 2022</p></div>
+                </div>
+                <div class="educacion__item animate-on-scroll">
+                    <span class="educacion__icono"><i class="uil uil-book-open"></i></span>
+                    <div><strong>Scuola Italiana Dante Alighieri</strong><p>Educación Primaria · 2009 – 2016</p></div>
+                </div>
+            </div>
         </section>
 
-        <section class="certificaciones seccion contenedor" id="certificaciones">
-            <section class="seccion certificaciones" id="certificaciones">
+        <section class="proyectos-seccion seccion" id="proyectos">
+            <div class="contenedor">
+                <h2 class="seccion__titulo">Proyectos</h2>
+                <div class="seccion__linea"></div>
+                <p class="seccion__descripcion">Proyectos personales y académicos que reflejan mis habilidades técnicas.</p>
+
+                <div class="proyectos__grid">
+
+                    <div class="proyecto__card animate-on-scroll proyecto__card--destacado">
+                        <div class="proyecto__icono-area">
+                            <i class="uil uil-globe"></i>
+                        </div>
+                        <div class="proyecto__contenido">
+                            <span class="proyecto__tag">Web · Personal</span>
+                            <h3>Portafolio Personal</h3>
+                            <p>Portafolio web responsivo construido desde cero con HTML, CSS y JavaScript puro. Incluye navegación suave, animaciones CSS y diseño adaptable a todos los dispositivos.</p>
+                            <div class="proyecto__tecnologias">
+                                <span>HTML</span><span>CSS</span><span>JavaScript</span>
+                            </div>
+                            <div class="proyecto__links">
+                                <a href="https://luis-sosa34.github.io" target="_blank" class="proyecto__btn proyecto__btn--demo">
+                                    <i class="uil uil-external-link-alt"></i> Demo
+                                </a>
+                                <a href="https://github.com/Luis-Sosa34/Luis-Sosa34.github.io" target="_blank" class="proyecto__btn proyecto__btn--github">
+                                    <i class="uil uil-github"></i> Código
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="proyecto__card animate-on-scroll proyecto__card--destacado">
+                        <div class="proyecto__icono-area">
+                            <i class="uil uil-chart-line"></i>
+                        </div>
+                        <div class="proyecto__contenido">
+                            <span class="proyecto__tag">Web App · Personal</span>
+                            <h3>Finanzas360</h3>
+                            <p>Sistema web de control de gastos y presupuesto personal. Permite registrar ingresos, egresos y visualizar el estado financiero de forma clara e intuitiva.</p>
+                            <div class="proyecto__tecnologias">
+                                <span>React</span><span>JavaScript</span><span>HTML</span><span>CSS</span>
+                            </div>
+                            <div class="proyecto__links">
+                                <a href="https://finanzas360.onrender.com/" target="_blank" class="proyecto__btn proyecto__btn--demo">
+                                    <i class="uil uil-external-link-alt"></i> Demo
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </section>
+
+        <section class="certificaciones-seccion seccion" id="certificaciones">
+            <div class="contenedor">
                 <h2 class="seccion__titulo">Certificaciones</h2>
+                <div class="seccion__linea"></div>
+                <p class="seccion__descripcion">Credenciales que validan mi formación continua.</p>
+                <div class="certificaciones__contenedor">
+                    <a class="certificacion__item animate-on-scroll" href="certificaciones/Luis Matias Sosa Dom%C3%ADnguez - Certificado GESTI%C3%93N DE PROYECTOS.pdf" target="_blank">
+                        <span class="certificacion__badge"><i class="uil uil-award"></i></span>
+                        <h4>Gestión de Proyectos</h4>
+                        <p>Ver certificado <i class="uil uil-external-link-alt"></i></p>
+                    </a>
+                    <a class="certificacion__item animate-on-scroll" href="certificaciones/LUIS MATIAS_SOSA DOMINGUEZ - Certificado FRONT-END_260105_153303.pdf" target="_blank">
+                        <span class="certificacion__badge"><i class="uil uil-brackets-curly"></i></span>
+                        <h4>Front End I</h4>
+                        <p>Ver certificado <i class="uil uil-external-link-alt"></i></p>
+                    </a>
+                    <a class="certificacion__item animate-on-scroll" href="certificaciones/LUIS MATIAS_SOSA DOMINGUEZ - Certificado FRONT-END_260105_153240.pdf" target="_blank">
+                        <span class="certificacion__badge"><i class="uil uil-brackets-curly"></i></span>
+                        <h4>Front End II</h4>
+                        <p>Ver certificado <i class="uil uil-external-link-alt"></i></p>
+                    </a>
+                </div>
+            </div>
+        </section>
 
-                <div class="contenedor">
-                    <div class="certificaciones__contenedor">
+        <section class="habilidades seccion contenedor" id="habilidades">
+            <h2 class="seccion__titulo">Habilidades</h2>
+            <div class="seccion__linea"></div>
+            <div class="habilidades__grid">
 
-                        <a class="certificacion__item"
-                            href="certificaciones/Luis Matias Sosa Domínguez - Certificado GESTIÓN DE PROYECTOS.pdf"
-                            target="_blank">
-                            Gestión de Proyectos
-                        </a>
-
-                        <a class="certificacion__item"
-                            href="certificaciones/LUIS MATIAS_SOSA DOMINGUEZ - Certificado FRONT-END_260105_153303.pdf"
-                            target="_blank">
-                            Front End I
-                        </a>
-
-                        <a class="certificacion__item"
-                            href="certificaciones/LUIS MATIAS_SOSA DOMINGUEZ - Certificado FRONT-END_260105_153240.pdf"
-                            target="_blank">
-                            Front End II
-                        </a>
-
+                <div>
+                    <h3 class="seccion__subtitulo">Tecnologías</h3>
+                    <div class="tech__grid">
+                        <div class="tech__item animate-on-scroll"><i class="uil uil-html5"></i><span>HTML</span></div>
+                        <div class="tech__item animate-on-scroll"><i class="uil uil-css3-simple"></i><span>CSS</span></div>
+                        <div class="tech__item animate-on-scroll"><i class="uil uil-java-script"></i><span>JavaScript</span></div>
+                        <div class="tech__item animate-on-scroll"><i class="uil uil-react"></i><span>React</span></div>
+                        <div class="tech__item animate-on-scroll"><i class="uil uil-python"></i><span>Python</span></div>
+                        <div class="tech__item animate-on-scroll"><i class="uil uil-github"></i><span>Git</span></div>
+                        <div class="tech__item animate-on-scroll"><i class="uil uil-desktop"></i><span>Office</span></div>
                     </div>
                 </div>
-            </section>
 
-            <section class="habilidades seccion contenedor" id="habilidades">
-                <h2 class="seccion__titulo">Habilidades</h2>
-
-                <h3 class="seccion__subtitulo">Habilidades Clave</h3>
-                <ul class="habilidades__lista cuadrilla">
-                    <li><i class="uil uil-check-circle"></i> Coordinación y organización </li>
-                    <li><i class="uil uil-check-circle"></i> Trabajo en equipo </li>
-                    <li><i class="uil uil-check-circle"></i> Liderazgo y motivación </li>
-                    <li><i class="uil uil-check-circle"></i> Manejo de sistemas informáticos</li>
-                </ul>
-
-                <section class="habilidades seccion contenedor" id="habilidades">
-                    <h3 class="seccion__subtitulo">Idiomas</h3>
-                    <ul class="idiomas__lista cuadrilla">
-                        <li><strong>Español</strong>: Nativo (100%)</li>
-                        <li><strong>Inglés</strong>: 75%</li>
-                        <li><strong>Italiano</strong>: 50%</li>
-                        <li><strong>Guaraní</strong>: 50%</li>
+                <div>
+                    <h3 class="seccion__subtitulo">Habilidades Blandas</h3>
+                    <ul class="habilidades__lista">
+                        <li class="animate-on-scroll"><i class="uil uil-check-circle"></i> Coordinación y organización</li>
+                        <li class="animate-on-scroll"><i class="uil uil-check-circle"></i> Trabajo en equipo</li>
+                        <li class="animate-on-scroll"><i class="uil uil-check-circle"></i> Liderazgo y motivación</li>
+                        <li class="animate-on-scroll"><i class="uil uil-check-circle"></i> Resolución de problemas</li>
+                        <li class="animate-on-scroll"><i class="uil uil-check-circle"></i> Gestión de proyectos</li>
                     </ul>
-                </section>
 
-                <section class="contacto seccion contenedor" id="contacto">
-                    <h2 class="seccion__titulo">Contáctame</h2>
-                    <div class="contacto__info cuadrilla">
-                        <p><i class="uil uil-phone-volume"></i> <strong>Teléfono:</strong> +595 971 877008</p>
-                        <p><i class="uil uil-envelope"></i> <strong>Email:</strong> luissisa43@gmail.com </p>
-                        <p><i class="uil uil-location-point"></i> <strong>Direccion:</strong> Pettirossi esq Colon 1233
-                        </p>
+                    <h3 class="seccion__subtitulo" style="margin-top:2rem">Idiomas</h3>
+                    <div class="idiomas__lista">
+                        <div class="idioma animate-on-scroll">
+                            <div class="idioma__info"><span>Español</span><span>Nativo</span></div>
+                            <div class="idioma__barra"><div class="idioma__progreso" data-width="100"></div></div>
+                        </div>
+                        <div class="idioma animate-on-scroll">
+                            <div class="idioma__info"><span>Inglés</span><span>Intermedio-Avanzado</span></div>
+                            <div class="idioma__barra"><div class="idioma__progreso" data-width="75"></div></div>
+                        </div>
+                        <div class="idioma animate-on-scroll">
+                            <div class="idioma__info"><span>Italiano</span><span>Intermedio</span></div>
+                            <div class="idioma__barra"><div class="idioma__progreso" data-width="50"></div></div>
+                        </div>
+                        <div class="idioma animate-on-scroll">
+                            <div class="idioma__info"><span>Guaraní</span><span>Intermedio</span></div>
+                            <div class="idioma__barra"><div class="idioma__progreso" data-width="50"></div></div>
+                        </div>
                     </div>
-                </section>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="contacto-seccion seccion" id="contacto">
+            <div class="contenedor">
+                <h2 class="seccion__titulo">Contáctame</h2>
+                <div class="seccion__linea"></div>
+                <p class="seccion__descripcion">¿Tenés un proyecto en mente? ¡Estoy disponible!</p>
+                <div class="contacto__grid">
+                    <a href="tel:+595971877008" class="contacto__card animate-on-scroll">
+                        <span class="contacto__icono"><i class="uil uil-phone-volume"></i></span>
+                        <div><strong>Teléfono</strong><p>+595 971 877008</p></div>
+                    </a>
+                    <a href="mailto:luissisa43@gmail.com" class="contacto__card animate-on-scroll">
+                        <span class="contacto__icono"><i class="uil uil-envelope"></i></span>
+                        <div><strong>Email</strong><p>luissisa43@gmail.com</p></div>
+                    </a>
+                    <a href="https://github.com/Luis-Sosa34" target="_blank" class="contacto__card animate-on-scroll">
+                        <span class="contacto__icono"><i class="uil uil-github"></i></span>
+                        <div><strong>GitHub</strong><p>Luis-Sosa34</p></div>
+                    </a>
+                    <div class="contacto__card animate-on-scroll">
+                        <span class="contacto__icono"><i class="uil uil-location-point"></i></span>
+                        <div><strong>Ubicación</strong><p>Pettirossi esq. Colón 1233, Asunción</p></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
     </main>
 
     <footer class="pie-pagina">
         <div class="pie-pagina__contenedor contenedor">
-            <p class="pie-pagina__copia">&#169; 2025 Luis Sosa. Todos los derechos reservados.</p>
+            <p class="pie-pagina__copia">&#169; 2025 Luis Matias Sosa &middot; Todos los derechos reservados.</p>
         </div>
     </footer>
 
+    <script>
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+        }, { threshold: 0.12 });
+        document.querySelectorAll('.animate-on-scroll').forEach(el => observer.observe(el));
+
+        const barObserver = new IntersectionObserver((entries) => {
+            entries.forEach(e => {
+                if (e.isIntersecting) {
+                    e.target.querySelectorAll('.idioma__progreso').forEach(bar => {
+                        setTimeout(() => { bar.style.width = bar.dataset.width + '%'; }, 150);
+                    });
+                }
+            });
+        }, { threshold: 0.3 });
+        const idiomasList = document.querySelector('.idiomas__lista');
+        if (idiomasList) barObserver.observe(idiomasList);
+
+        window.addEventListener('scroll', () => {
+            document.getElementById('cabecera').classList.toggle('cabecera--scroll', window.scrollY > 50);
+        });
+    </script>
 </body>
+</html>
+
 
 </html>
+
 
